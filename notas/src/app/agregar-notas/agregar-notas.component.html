@@ -1,0 +1,10 @@
+<form (ngSubmit)="agregarNotas()" ngNativeValidate>
+    <div class="contenedor">
+        Titulo <input type="text" [(ngModel)]="titulo" name="titulo" required>
+        Contenido <textarea [(ngModel)]="contenido" name="contenido" required></textarea>
+        <br>
+      
+        <button style="background-color: rgb(255, 142, 161);" type="submit"> + Agregar</button>
+        <button style="background-color: gray;" (click)="agregar()">Cancelar</button>
+      </div>
+</form>
